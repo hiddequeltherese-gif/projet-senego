@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENEGO_BY_THERESE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="focus-overlay" id="blurOverlay"></div>
+    <header class="site-header">
+        <div class="header-wrap">
+            <div class="brand-logo">
+                <h1>Sene<span>go</span></h1>
+                <span class="brand-sub">Thérèse</span>
+            </div>
+            <nav class="navigation-bar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active"data-category="all">Accueil</a></li>
+                    <li><a href="politique.html" class="nav-link" data-category="politique">Politique</a></li>
+                    <li><a href="societe.html" class="nav-link" data-category="Société">Société</a></li>
+                    <li><a href="celebrites.html" class="nav-link" data-category="Célébrités">Célébrités</a></li>
+                    <li><a href="sport.html" class="nav-link" data-category="Sport">Sport</a></li>
+                    <li><a href="culture.html" class="nav-link" data-category="Culture">Culture</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="header-actions"><button id="theme-switcher"><i class="fas fa-moon"></i></button>
+
+        </div>
+
+    </header>
+    <main class="content-container">
+        <section class="news-feed">
+            <h2 id="section-title">À la une</h2>
+​<!-- LA GRANDE UNE (DYNAMIQUE) -->
+ <article class="main-news-card focus-target">
+<div class="main-card-media">
+<img id="une-img" class="cliquable-blur" src="https://images.unsplash.com/..." alt="">
+</div>
+<div class="main-card-body">
+<h3 id="une-title">Pourquoi Cheikh Diba est devenu l'homme-clé du nouveau gouvernement</h3>
+<div class="post-meta">
+<span><i class="far fa-clock"></i> Il y a 2h</span>
+<span><i class="far fa-user"></i> <span id="une-author">Sidy Mohamed</span></span>
+</div>
+<div class="card-actions">
+<button class="action-btn share-link"><i class="fas fa-share-alt"></i> Partager</button>
+<button class="action-btn like-trigger"><i class="far fa-heart"></i> <span class="like-count">0</span></button>
+<div class="react-input-container">
+<input type="text" class="react-field" placeholder="Réagir à cet article...">
+<button class="send-react-btn"><i class="far fa-paper-plane"></i></button>
+</div>
+</div>
+<div class="live-comments-box"></div>
+</div>
+</article>
+​<!-- LE FIL DES ARTICLES SECONDAIRES -->
+<div id="secondary-list" class="secondary-news-list">
+​<!-- Article 1: Sport -->
+<article class="horizontal-news-card">
+<div class="horizontal-card-media">
+<img class="cliquable-blur" src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=300" alt="">
+</div>
+<div class="horizontal-card-body">
+<h3>Lutte contre le racisme : un nouveau signal d'alerte adopté en Coupe du Monde</h3>
+<div class="post-meta">
+<span><i class="far fa-clock"></i> Il y a 38 min</span>
+<span><i class="far fa-user"></i> Khadre SAKHO</span>
+</div>
+<div class="card-actions">
+<button class="action-btn like-trigger"><i class="far fa-heart"></i> <span class="like-count">0</span></button>
+<div class="react-input-container">
+<input type="text" class="react-field" placeholder="Réagir...">
+<button class="send-react-btn"><i class="far fa-paper-plane"></i></button>
+</div>
+</div>
+<div class="live-comments-box"></div>
+</div>
+</article>
+​<!-- Article 2: Afrique / Société -->
+<article class="horizontal-news-card">
+<div class="horizontal-card-media">
+<img class="cliquable-blur" src="https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?q=80&w=300" alt="">
+</div>
+<div class="horizontal-card-body">
+<h3>Burkina Faso : le terme « camarade » imposé au sein de l'administration</h3>
+<div class="post-m$eta">
+<span><i class="far fa-clock"></i> Il y a 51 min</span>
+<span><i class="far fa-user"></i> Senego</span>
+</div>
+<div class="card-actions">
+<button class="action-btn like-trigger"><i class="far fa-heart"></i> <span class="like-count">0</span></button>
+<div class="react-input-container">
+<input type="text" class="react-field" placeholder="Réagir...">
+<button class="send-react-btn"><i class="far fa-paper-plane"></i></button>
+</div>
+</div>
+<div class="live-comments-box"></div>
+</div>
+</article>
+</div>
+  
+                 </section>
+                 <section class="sections-container" id="dynamique-rubriques-main">
+    <div class="category-block">
+        <h2 class="category-title">Politique</h2>
+        <div class="category-grid">
+            <article class="mini-card focus-target">
+                <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=400" alt="Politique">
+                <div class="mini-card-content">
+                    <h3>Gouvernement : Les chantiers prioritaires du nouveau Premier ministre</h3>
+                    <span class="mini-date">Il y a 2h</span>
+                </div>
+            </article>
+            <article class="mini-card">
+                <img class="cliquable-blur" src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=400" alt="Assemblée">
+                <div class="mini-card-content">
+                    <h3>Assemblée nationale : Débats houleux autour des nouvelles réformes</h3>
+                    <span class="mini-date">Il y a 4h</span>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="category-block">
+        <h2 class="category-title">Société</h2>
+        <div class="category-grid">
+            <article class="mini-card">
+                <img class="cliquable-blur" src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=400" alt="Dakar">
+                <div class="mini-card-content">
+                    <h3>Éducation à Dakar : Les innovations numériques dans les universités</h3>
+                    <span class="mini-date">Il y a 3h</span>
+                </div>
+            </article>
+            <article class="mini-card">
+                <img class="cliquable-blur" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" alt="Littoral">
+                <div class="mini-card-content">
+                    <h3>Protection du littoral : Mobilisation citoyenne ce week-end</h3>
+                    <span class="mini-date">Il y a 5h</span>
+                </div>
+            </article>
+        </div>
+    </div>
+
+</section>
+                <aside class="side-panel espace-therese">
+    <h3>✨ L'espace de Thérèse ✨</h3>
+    <p>Une vision épurée, fluide et moderne de l'actualité sénégalaise. Garanti 100% SANS PUBLICITÉ.</p>
+    <h4>Les tendances</h4>
+    <ul>
+        <li>01 Le design minimaliste s'impose dans les projets d'études.</li>
+        <li>02 Dakar : Les espaces collaboratifs en plein boom..</li>
+    </ul>
+</aside>
+<!-- ==================== RUBRIQUE POLITIQUE ==================== -->
+<section class="section-politique">
+    
+    <h2 class="titre-rubrique">Politique</h2>
+
+    <div class="politique-container">
+
+        <!-- ÉTAPE 2 : L'Article Star (La Une Politique) -->
+        <article class="politique-une">
+            <div class="une-image-container">
+                <img src="https://via.placeholder.com/600x400" alt="Image de la Une Politique">
+                <span class="badge-categorie">Flash</span>
+            </div>
+            <div class="une-contenu">
+                <span class="politique-date">Il y a 10 minutes</span>
+                <h3 class="une-titre">
+                    <a href="#">Dernières coulisses de l'Assemblée : Les députés se penchent sur les nouvelles réformes</a>
+                </h3>
+                <p class="une-extrait">
+                    Les discussions s'intensifient aujourd'hui au cœur de la capitale. Entre propositions de lois et débats animés, découvrez les enjeux majeurs de cette session extraordinaire...
+                </p>
+            </div>
+        </article>
+
+        <!-- ÉTAPE 3 : La Grille des Articles Secondaires -->
+        <div class="politique-grille">
+            
+            <article class="politique-carte-secondaire">
+                <div class="carte-secondaire-media">
+                    <img src="https://via.placeholder.com/300x200" alt="Article secondaire 1">
+                </div>
+                <div class="carte-secondaire-info">
+                    <span class="politique-date">Il y a 2 heures</span>
+                    <h4 class="carte-secondaire-titre">
+                        <a href="#">Élections locales : Les listes officielles enfin déposées et validées</a>
+                    </h4>
+                </div>
+            </article>
+
+            <article class="politique-carte-secondaire">
+                <div class="carte-secondaire-media">
+                    <img src="https://via.placeholder.com/300x200" alt="Article secondaire 2">
+                </div>
+                <div class="carte-secondaire-info">
+                    <span class="politique-date">Il y a 4 heures</span>
+                    <h4 class="carte-secondaire-titre">
+                        <a href="#">Décryptage : Comprendre les enjeux du nouveau projet de loi sur le numérique</a>
+                    </h4>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- ÉTAPE 4 : Le Fil Info (Les Brèves en Direct) -->
+        <aside class="politique-fil-info">
+            <h3 class="fil-info-titre">⚡ Flash Politique</h3>
+            <ul class="fil-info-liste">
+                <li>
+                    <span class="fil-info-heure">12h30</span>
+                    <a href="#">Déclaration du porte-parole du gouvernement suite au conseil des ministres.</a>
+                </li>
+                <li>
+                    <span class="fil-info-heure">11h15</span>
+                    <a href="#">Conférence de presse annoncée pour demain matin à la mairie.</a>
+                </li>
+                <li>
+                    <span class="fil-info-heure">09h45</span>
+                    <a href="#">Réunion d'urgence entre les principaux leaders de la coalition.</a>
+                </li>
+            </ul>
+        </aside>
+
+    </div>
+</section>
+<div class="navigation-pages">
+    <a href="politique.html" class="nav-link">← Précédent</a>
+    <a href="societe.html" class="nav-link">Suivant →</a>
+</div>                 
+</main>
+                 
+                 <footer class="site-footer">
+                    <div class="footer-wrap"><p>&copy; 2026 <strong>Senego version Thérèse</strong>.Projet d'examen.</p>
+                        <p>Fait avec passion et efficacité.</p>
+
+                    </div>
+
+                 </footer>
+                 <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senego - Société</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="category-page">
+    <div class="focus-overlay" id="blurOverlay"></div>
+    <div id="overlay" class="overlay-hidden"></div>
+    <style>
+    /* Import de polices élégantes */
+    @import url('https://fonts.googleapis.com/css2?family=The+Seasons:ital,opsz,wght@0,8..30,400;1,8..30,700&display=swap');
+
+    body {
+        background-color: #f7c8ff; /* Fond lavandevalidé */
+    }
+
+    .banner-final {
+        background: linear-gradient(135deg, #430a4d, #430a4d);
+        padding: 80px 20px;
+        text-align: center;
+        color: #ffffff;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .banner-final h1 {
+        /* Modification ici : Police type The Seasons pour l'élégance demandée */
+        font-family: 'The Seasons', serif;
+        font-size: 4rem;
+        margin: 0;
+        letter-spacing: 1px;
+    }
+
+    /* Style des mini-cartes inspiré de 1000680016.jpg */
+    .mini-card {
+        background: #ffffff; /*Fond clair pour contraste */
+        border: 2px solid 117, 70, 232; /* Couleur violette pour le contour */
+        border-radius: 15px;
+        padding: 0;
+        overflow: hidden;
+        box-shadow: 0 0 15px rgba( 45, 28, 127); /* Effet lueur violette */
+        transition: 0.3s;
+    }
+
+    .mini-card:hover {
+        box-shadow: 0 0 25px rgba( 200, 179, 246);
+    }
+</style>
+
+<header class="banner-final" style="display: flex; justify-content: space-between; align-items: center; padding: 50px 20px; background: #02060E#0356C5; color: white;">
+    <!-- Les airpods sont maintenant placées à gauche -->
+    <img src="airpods.jpg" alt="AirPods" style="height: 250px;">
+    
+    <!-- Le titre reste au milieu -->
+    <h1 style="margin: 0;; font-family: 'The Seasons', serif;">Senego Société</h1>
+    
+    <!-- La colombe est maintenant placée à droite -->
+    <img src="chess.jpg" alt="Échecs" style="height: 250px;">
+</header>
+    
+
+<div class="nav-container">
+    <a href="index.html" class="back-home-btn">&larr; Retour à l'Accueil</a>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Rechercher une actualité...">
+        <button id="searchButton" class="search-btn">🔍</button>
+    </div> 
+</div>
+</div>
+
+    <main class="content-container" style="padding: 40px 20px;">
+        <section class="sections-container">
+            
+<h2 class="category-title" style="margin-bottom: 30px; font-weight: bold; letter-spacing: 2px; color: #E7199D;">
+    ✨ Chroniques de Société ✨
+</h2>
+
+            <div id="articles-politique-target" class="category-grid">
+                <!-- Article 1 : Une Politique Flash -->
+                <article class="mini-card focus-target" data-rank="1">
+                    <img class="cliquable-blur" src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=400" alt="Une Politique Flash">
+                    <div class="mini-card-content">
+                        <h3>Une Politique Flash</h3>
+                        <span class="mini-date">Il y a 10 minutes</span>
+                    </div>
+                </article>
+
+                <!-- Article 2 : Dernières coulisses de l'Assemblée -->
+                <article class="mini-card" data-rank="2">
+                    <img class="cliquable-blur" src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=400" alt="Dernières coulisses de l'Assemblée">
+                    <div class="mini-card-content">
+                        <h3>Dernières coulisses de l'Assemblée : Les députés se penchent sur les nouvelles réformes</h3>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 8px;">Les discussions s'intensifient aujourd'hui au cœur de la capitale. Entre propositions de lois et débats animés, découvrez les enjeux majeurs de cette session extraordinaire...</p>
+                    </div>
+                </article>
+
+                <!-- Article 3 : Décryptage Projet de loi Numérique -->
+                <article class="mini-card" data-rank="3">
+                    <img class="cliquable-blur" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400" alt="Article secondaire 1">
+                    <div class="mini-card-content">
+                        <h3>Élections locales : Les listes officielles enfin déposées et validées</h3>
+                        <span class="mini-date">Il y a 2 heures</span>
+                    </div>
+                </article>
+
+                <!-- Article 4 : Décryptage Loi Numérique (Suite de ton contenu) -->
+                <article class="mini-card" data-rank="4">
+                    <img class="cliquable-blur" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400" alt="Article secondaire 2">
+                    <div class="mini-card-content">
+                        <span class="mini-date">Il y a 4 heures</span>
+                        <h3>Décryptage : Comprendre les enjeux du nouveau projet de loi sur le numérique</h3>
+                    </div>
+                </article>
+            </div>
+            <div class="navigation-pages">
+    <a href="politique.html" class="nav-link">← Précédent</a>
+    <a href="celebrites.html" class="nav-link">Suivant →</a>
+</div>
+        </section>
+
+        <!-- SECTION FLASH POLITIQUE -->
+        <section class="flash-section" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ad96e9;">
+            <h2 class="category-title" style="color: #ad96e9;">Les forces vives de notre quotidien<span style="color: #ad96e9;">⚡</span></h2>
+            <ul style="list-style-type: none; padding-left: 0; line-height: 2;">
+                <li style="margin-bottom: 10px; font-size: 0.95rem; padding-bottom: 8px; border-bottom: 1px dashed #eee;">
+                    <strong style="color: #333;">12h30</strong> - Déclaration du porte-parole du gouvernement suite au conseil des ministres.
+                </li>
+                <li style="margin-bottom: 10px; font-size: 0.95rem; padding-bottom: 8px; border-bottom: 1px dashed #eee;">
+                    <strong style="color: #333;">11h15</strong> - Conférence de presse annoncée pour demain matin à la mairie.
+                </li>
+                <li style="margin-bottom: 10px; font-size: 0.95rem; padding-bottom: 8px;">
+                    <strong style="color: #333;">09h45</strong> - Réunion d'urgence entre les principaux leaders de la coalition.
+                </li>
+            </ul>
+        </section>
+    </main>
+<footer class="site-footer">
+                    <div class="footer-wrap"><p>&copy; 2026 <strong>Senego version Thérèse</strong>.Projet d'examen.</p>
+                        <p>Fait avec passion et efficacité.</p>
+
+                    </div>
+
+                 </footer>
+    <script src="script.js"></script>
+</body>
+</html>
